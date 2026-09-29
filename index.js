@@ -2999,7 +2999,7 @@ function BeeSwarmSimulator(DATA){
         
         basic:{
             
-            u:0,v:0,meshPartId:0,gatherSpeed:0.1,gatherAmount:2,speed:50,convertSpeed:0.1,convertAmount:80,attack:10,energy:2000,favoriteTreat:'sunflowerSeed',rarity:'common',color:'white',description:'An ordinary bee. Well rounded and hard working!',giftedHiveBonus:{oper:'*',stat:'redPollen,bluePollen,whitePollen',num:30}
+            u:0,v:0,meshPartId:0,gatherSpeed:0.1,gatherAmount:2,speed:50,convertSpeed:0.1,convertAmount:80,attack:10,energy:2000,favoriteTreat:'sunflowerSeed',rarity:'common',color:'white',description:'the',giftedHiveBonus:{oper:'*',stat:'redPollen,bluePollen,whitePollen',num:30}
         },
         
         looker:{
