@@ -2999,7 +2999,7 @@ function BeeSwarmSimulator(DATA){
         
         basic:{
             
-            u:0,v:0,meshPartId:0,gatherSpeed:0.01,gatherAmount:8,speed:19,tokens:['blueBoost','blueBomb_','haste','pollenMarkToken','markSurge*','triangulate'],convertSpeed:0.1,convertAmount:80,attack:10,energy:2000,favoriteTreat:'sunflowerSeed',rarity:'common',color:'white',description:'the',giftedHiveBonus:{oper:'*',stat:'redPollen,bluePollen,whitePollen',num:30}
+            u:0,v:0,meshPartId:0,gatherSpeed:0.01,gatherAmount:8,speed:19,tokens:['blueBoost','blueBomb_','haste','pollenMarkToken','markSurge*','triangulate'],convertSpeed:0.01,convertAmount:80,attack:10,energy:2000,favoriteTreat:'sunflowerSeed',rarity:'legendary',color:'white',description:'the',giftedHiveBonus:{oper:'*',stat:'redPollen,bluePollen,whitePollen',num:30}
         },
         
         looker:{
