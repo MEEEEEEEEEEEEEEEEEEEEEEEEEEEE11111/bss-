@@ -1558,16 +1558,16 @@ function BeeSwarmSimulator(DATA){
             
             isMachine:true,requirements:function(player){
                 
-                if(player.discoveredGifteds.length<40) return "Discover 40 gifted bee types to generate a Supreme Star Amulet!"
+                if(player.discoveredGifteds.length<0) return "Discover 40 gifted bee types to generate a Supreme Star Amulet!"
                 
-                if(player.honey<5000000000) return 'You need 5B honey to generate a Supreme Star Amulet!'
+                if(player.honey<5) return 'You need 5 honey to generate a Supreme Star Amulet!'
 
             },minX:-35.5+Math.sin(45.6*0.0174533)*1.5-Math.cos(45.6*0.0174533)*43-3,maxX:-35.5+Math.sin(45.6*0.0174533)*1.5-Math.cos(45.6*0.0174533)*43+3+1,minY:11,maxY:50,minZ:-2.75-Math.cos(45.6*0.0174533)*1.5-Math.sin(45.6*0.0174533)*43-3,maxZ:-2.75-Math.cos(45.6*0.0174533)*1.5-Math.sin(45.6*0.0174533)*43+3+1,message:'Generate a Supreme Star Amulet(5B Honey)',func:function(player){
                 
-                player.honey-=5000000000
-                player.addMessage('-5,000,000,000 Honey')
+                player.honey-=5
+                player.addMessage('-5 Honey')
 
-                let amulet=['*2.5 capacityMultiplier']
+                let amulet=['*20000 capacityMultiplier']
 
                 amulet.push(...MATH.selectFromArray(['*'+MATH.random(1.05,1.2).toFixed(2)+' POLLEN','*'+MATH.random(1.2,1.7).toFixed(2)+' redPollen','*'+MATH.random(1.2,1.7).toFixed(2)+' bluePollen','*'+MATH.random(1.2,1.7).toFixed(2)+' whitePollen','*'+MATH.random(1.2,1.7).toFixed(2)+' pollenFromBees','+'+MATH.random(0.03,0.15).toFixed(2)+' INSTANT_CONVERSION','*'+MATH.random(1.1,1.4).toFixed(2)+' convertRate','+'+MATH.random(0.01,0.08).toFixed(2)+' beeAbilityRate','+'+MATH.random(0.01,0.08).toFixed(2)+' criticalChance'],5))
 
@@ -1722,10 +1722,10 @@ function BeeSwarmSimulator(DATA){
             },minX:-29.5,maxX:-21.5,minY:0.5,maxY:3.5,minZ:7.75,maxZ:11.75,message:'Use Royal Jelly Dispenser (6 Tickets)',func:function(player){
 
                 items.royalJelly.amount++
-                items.ticket.amount-=6
+                items.ticket.amount-=0
                 player.addEffect('haste',false,false,undefined,10)
                 player.updateInventory()
-                player.addMessage('Congrats you got scammed! 6 tickets is a big waste')
+                player.addMessage('Congrats you got scammed! 0 tickets is a big waste')
                 player.addMessage('-6 Tickets')
                 player.addMessage('+1 Royal Jelly')
                 player.addMessage('Activated x10 "Haste"')
@@ -1850,7 +1850,7 @@ function BeeSwarmSimulator(DATA){
 
             },minX:2-3,maxX:2+3,minY:2,maxY:9,minZ:60-3,maxZ:60+3,message:'Turn in 200 stingers to claim a Vicious Bee',func:function(player){
 
-                items.stinger.amount-=200
+                items.stinger.amount-=0
                 items.viciousBeeEgg.amount++
                 player.updateInventory()
                 player.addMessage('🎉 You claimed a Vicious Bee! 🎉',[0,0,0])
