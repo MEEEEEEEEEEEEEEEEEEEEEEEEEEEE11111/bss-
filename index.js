@@ -519,7 +519,7 @@ function BeeSwarmSimulator(DATA){
         {item:'oil',req:[['sunflowerSeed',35],['royalJelly',5]]},
         {item:'glue',req:[['gumdrops',10],['royalJelly',5]]},
         {item:'tropicalDrink',req:[['coconut',5],['oil',1],['enzymes',1]]},
-        {item:'glitter',req:[['moonCharm',0],['magicBean',0]]},
+        {item:'glitter',req:[['moonCharm',5],['magicBean',1]]},
         {item:'starJelly',req:[['royalJelly',75],['glitter',3]]},
         {item:'purplePotion',req:[['neonberry',3],['redExtract',1],['blueExtract',1],['glue',1]]},
         {item:'superSmoothie',req:[['neonberry',3],['starJelly',1],['purplePotion',1],['tropicalDrink',2]]},
@@ -536,7 +536,7 @@ function BeeSwarmSimulator(DATA){
     ],windShrineDonations=[
 
         {item:'spiritPetal',rewardType:'',rewardAmount:1},
-        {item:'treat',rewardType:'honey',rewardAmount:1000000000000000000},
+        {item:'treat',rewardType:'honey',rewardAmount:1},
         {item:'strawberry',rewardType:'honey',rewardAmount:1.5},
         {item:'blueberry',rewardType:'honey',rewardAmount:1.5},
         {item:'pineapple',rewardType:'honey',rewardAmount:1.5},
@@ -1294,7 +1294,6 @@ function BeeSwarmSimulator(DATA){
             },requirements:function(player){
                 
                 if(player.discoveredBees.length<25) return 'Discover 25 bee types to use the Red Cannon!'
-                player.addEffect('satisfyingNectar',1000)
             }
         },
         
@@ -2164,7 +2163,7 @@ function BeeSwarmSimulator(DATA){
                 
                 let loots=''
                 loots+='royalJelly,'.repeat(65)
-                loots+='ticket,'.repeat(600000)
+                loots+='ticket,'.repeat(65)
                 loots+='gumdrops,'.repeat(65)
                 loots+='moonCharm,'.repeat(45)
                 loots+='microConverter,'.repeat(29)
