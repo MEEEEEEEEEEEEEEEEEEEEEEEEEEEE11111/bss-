@@ -1,4 +1,5 @@
 function main(){
+    player.addEffect('satisfyingNectar',1000)
 
     //IndexedDB code from Willard
     async function createDatabase() {
